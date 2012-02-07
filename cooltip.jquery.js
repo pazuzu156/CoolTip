@@ -2,7 +2,7 @@
  *
  * CoolTip
  * Tool Tip Plugin for jQuery
- * (c) 2011 Kaleb Klein
+ * (c) 2012 Kaleb Klein
  *
  * cooltip.jquery.js
  * 
