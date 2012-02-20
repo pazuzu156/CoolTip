@@ -4,6 +4,8 @@
  * Tool Tip Plugin for jQuery
  * (c) 2012 Kaleb Klein
  *
+ * Version: 1.0.1
+ *
  * cooltip.jquery.js
  * 
  */
