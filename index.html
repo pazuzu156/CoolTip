@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CoolTip - jQuery Tool Tip Plugin</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="cooltip.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="cooltip.jquery.js"></script>
+<script type="text/javascript">
+// Set up the function that starts the jQuery instance
+$(function() {
+	$(".ct").cooltip(); // Grab every element with the class 'ct' and create the tool tips for them
+});
+</script>
+<style type="text/css">
+body { 
+	background-color:#DEFFFE;
+	margin:0;
+	padding:0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10pt;
+}
+#container {
+	background-color:#fff;
+	width:980px;
+	margin:0 auto 25px auto;
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+	border-bottom:1px solid #000;
+	border-radius:0 0 25px 25px;
+	box-shadow:0 0 25px #000;
+}
+#header {
+	border-bottom:1px solid #000;
+	padding:10px;
+}
+#content {
+	padding:10px 10px 20px 10px;
+}
+#footer {
+	width:980px;
+	text-align:center;
+	/* text-shadow:-1px -1px 3px #000; */
+	margin:0 auto 25px auto;
+}
+
+/* misc */
+a { color:#000; }
+a:hover { color:#000; text-decoration:none; }
+pre { background-color:#DEFFFE; padding:5px; border:1px dotted #3CE6E0; }
+</style>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<h1 style="margin:0;">CoolTip - jQuery Tool Tip Plugin</h1>
+		</div>
+		<div id="content">
+			<h2>Plugin Overview</h2>
+			<p>This plugin was made to easily allow the use of a simple JavaScript code to initialize any element you wish to show a tool tip, that's surrounded by an anchor tag. In the next section, the examples will show what it can do, then the specs and so on...</p>
+			<hr>
+			<h2>Examples</h2>
+			<p>Here are a few <a href="#" class="ct" title="This is a tool tip with normal text">examples</a> of how the CoolTip works! There are many <a href="#" class="ct" title="<strong>HTML</strong>! They also support <em>HTML</em> :D">features</a> to this plugin, such as HTML support. Another thing is, with the tool tip, you can <a href="#" class="ct" title="They even support images!<br><img src='kk-icon.png'>">basically</a> use it to help anyone you wish!</p>
+			<hr>
+			<h3>Plugin Specifications</h3>
+			<p>In order to use the plugin, you need jQuery, which can be obtained by going to their <a href="http://www.jquery.com" target="_blank" class="ct" title="Use this link to get jQuery">website</a>. You also need the plugin itself, the stylesheet, and the arrow image to make it look more like a bubble. Here are the specs:</p>
+			<ul>
+				<li><span style="text-decoration:line-through;">It's easiest to use them on links, and that's all they have been tested on</span>
+					<ul>
+						<li>Link is not needed. a, span, div, img all work</li>
+					</ul>
+				</li>
+				<li>Very simple to use:
+					<ul>
+						<li>Add the class to the element</li>
+						<li>Create a title for that element within the tag</li>
+						<li>Use a bit of JavaScript to get all with that class</li>
+						<li>You're all done!</li>
+					</ul>
+				</li>
+				<li>Want the code? Fork it <a href="https://www.github.com/pazuzu156/CoolTip" target="_blank" class="ct" title="Fork the project! :D">here</a> or download the zip <a href="http://www.kalebklein.com/downloads/cooltip" target="_blank" class="ct" title="You need to login before you can download this.">here</a></li>
+			</ul>
+			<hr>
+			<h3>How to Use It</h3>
+			<p>First off, you need to include jQuery, the plugin, and the CSS</p>
+			<pre><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;cooltip.css&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;cooltip.jquery.js&quot;&gt;&lt;/script&gt;</code></pre>
+			<p>Now, come up with a class name, id, or just use the element if you want that element to always have a tool tip, and create the JavaScript for it</p>
+			<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+    $(function() {
+        $(&quot;.ct&quot;).cooltip(); // initialize the plugin with this class
+    });
+&lt;/script&gt;</code></pre>
+			<p>And finally just create the element</p>
+			<pre><code>&lt;a href=&quot;http://www.example.com&quot; class=&quot;ct&quot; title=&quot;This is where the tool tip text will go&quot;&gt;A Link&lt;/a&gt;</code></pre>
+			<hr>
+			<h3>Versions</h3>
+			Version 1.0.1 <em>Works with lots of tags now</em> | <strong>Current</strong><br>
+			Version 1.0 <em>Release</em>
+		</div>
+	</div>
+	<div id="footer">
+		Plugin, page, and content &copy; 2012 <a href="http://www.kalebklein.com/" target="_blank" class="ct" title="This is a link to my website!">Kaleb Klein</a> - All Rights Reserved
+	</div>
+</body>
+</html>
